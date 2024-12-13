@@ -1529,6 +1529,10 @@ export class AppBskyActorNS {
     params?: AppBskyActorGetProfile.QueryParams,
     opts?: AppBskyActorGetProfile.CallOptions,
   ): Promise<AppBskyActorGetProfile.Response> {
+    console.log('--- AppBskyActorGetProfile')
+    console.log('--- params', params)
+    console.log('--- opts', opts)
+
     return this._client.call(
       'app.bsky.actor.getProfile',
       params,

@@ -996,6 +996,9 @@ class AppBskyActorNS {
         return this._client.call('app.bsky.actor.getPreferences', params, undefined, opts);
     }
     getProfile(params, opts) {
+        console.log('--- AppBskyActorGetProfile');
+        console.log('--- params', params);
+        console.log('--- opts', opts);
         return this._client.call('app.bsky.actor.getProfile', params, undefined, opts);
     }
     getProfiles(params, opts) {

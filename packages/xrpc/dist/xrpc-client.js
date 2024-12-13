@@ -63,6 +63,8 @@ class XrpcClient {
             duplex: 'half',
             signal: opts?.signal,
         };
+        console.log('--- reqUrl', reqUrl);
+        console.log('--- init', init);
         try {
             const response = await this.fetchHandler.call(undefined, reqUrl, init);
             const resStatus = response.status;
