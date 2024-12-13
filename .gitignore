@@ -3,6 +3,8 @@ lerna-debug.log
 npm-debug.log
 yarn-error.log
 packages/**/dist
+!packages/api/dist
+!packages/xrpc/dist
 .idea
 packages/*/coverage
 .vscode/
